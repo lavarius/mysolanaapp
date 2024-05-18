@@ -7,9 +7,9 @@ declare_id!("5Kec3XAQJ8NC6CkRbSigxzDr67b8UEnqsURSQMsZVgve");
 pub mod mysolanaapp {
     use super::*;
 
-    pub fn initialize(ctx: Context<Initialize>) -> Result<()> {
-        Ok(())
-    }
+    // pub fn initialize(ctx: Context<Initialize>) -> Result<()> {
+    //     Ok(())
+    // }
     pub fn create(ctx: Context<Create>) -> ProgramResult {
         let base_account = &mut ctx.accounts.base_account;
         base_account.count = 0;
