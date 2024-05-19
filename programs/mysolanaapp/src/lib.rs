@@ -24,10 +24,6 @@ pub mod mysolanaapp {
 }
 
 // Transaction instructions
-// #[derive(Accounts)]
-// pub struct Initialize {}
-
-// Transaction instructions
 #[derive(Accounts)]
 pub struct Create<'info> {
     #[account(init, payer = user, space = 16 + 16)]
